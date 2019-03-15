@@ -36,8 +36,7 @@ pip install redis==2.10.6
 pip install kombu==4.2.1
 pip install pathos
 pip install ipyparallel
-pip install pygal
-pip install pyclustering plotly networkx staticmodel pyecharts
+pip install pygal plotly
 
 
 
