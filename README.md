@@ -15,3 +15,8 @@ sudo gpasswd -a ${USER} docker
 sudo systemctl restart docker
 su ${USER}
 ```
+
+### 构建docker
+```shell
+docker build -t py37 .
+```
