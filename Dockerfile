@@ -28,7 +28,7 @@ RUN curl https://pyenv.run | bash && \
     mkdir ~/.pyenv/cache && mv Python-3.7.2.tar.xz ~/.pyenv/cache && \
     env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install -v 3.7.2 && \
     pyenv rehash && pyenv global 3.7.2  && \
-    bash packages.sh && rm packages.sh && rm rf ~/.cache && rm -rf ~/.pyenv/cache && apt-get clean
+    bash packages.sh && rm packages.sh && rm -rf ~/.cache && rm -rf ~/.pyenv/cache && apt-get clean
     
 RUN ln -s /root/.pyenv/shims/* /usr/bin/
 
