@@ -17,7 +17,7 @@ COPY Python-3.7.2.tar.xz ./
 RUN apt update && apt install -y sudo fontconfig screen htop wget net-tools vim curl && \
     apt install -y swig make cmake build-essential git gcc inetutils-ping procps && \
     apt-get install -y llvm llvm-7 libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev zip unzip rar unrar && \
-    apt install -y redis-server gcc-multilib libaio1 libglib2.0-dev
+    apt install -y redis-server gcc-multilib libaio1
 
 RUN curl https://pyenv.run | bash && \
     echo 'export PATH="/root/.pyenv/bin:$PATH"' >> ~/.bashrc && \
