@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+import sys
+import os
+from notebook.auth import passwd
+
+os.chdir(os.path.expanduser('~'))
+if not os.path.exists('notebooks'):
+    os.mkdir('notebooks')
+
+pwd_hash = passwd(os.environ.get('PASSWORD','123321eq'))
+
+with open('start_book.sh','w') as fp:
+    fp.write("#!/bin/bash\n")
+    fp.write("source ~/.bashrc\n")
+    fp.write(f"jupyter notebook --notebook-dir=~/notebooks --no-browser --port=8888 --ip=0.0.0.0 --NotebookApp.password='{pwd_hash}' --allow-root")
+
+os.system("/bin/bash ~/start_book.sh")

@@ -12,6 +12,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY ./fonts/msyh.ttf /usr/share/fonts/
 COPY ./fonts/simhei.ttf /usr/share/fonts/
 COPY ./packages.sh ./
+COPY ./startup ./startup
 COPY Python-3.7.2.tar.xz ./ 
 
 RUN apt update && apt install -y sudo fontconfig screen htop wget net-tools vim curl && \
@@ -32,7 +33,7 @@ RUN curl https://pyenv.run | bash && \
     
 RUN ln -s /root/.pyenv/shims/* /usr/bin/
 
-CMD ['/usr/bin/ipython']
+CMD ['/usr/bin/python','~/startup']
     
 
 
