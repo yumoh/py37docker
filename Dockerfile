@@ -33,7 +33,7 @@ RUN curl https://pyenv.run | bash && \
     
 RUN ln -s /root/.pyenv/shims/* /usr/bin/
 
-CMD ["/usr/bin/python", "~/startup"]
+CMD ["/usr/bin/python", "/root/startup"]
     
 
 
