@@ -38,6 +38,8 @@ pip install pathos
 pip install ipyparallel
 pip install pygal plotly
 
-
+# r2 user
+pip install auto-sklearn==0.4.1
+pip install hyperopt fbprophet pyclustering pyod ray networkx staticmodel pyecharts
 
 
