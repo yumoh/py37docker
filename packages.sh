@@ -21,7 +21,7 @@ pip install lifelines==0.14.6
 pip install kmodes==0.9
 pip install opencv-contrib-python-headless
 pip install scikit-image pillow requests lxml pyquery pyinstaller
-pip install six numpy scipy Pillow matplotlib scikit-image opencv-python imageio Shapely
+pip install six numpy scipy Pillow matplotlib scikit-image imageio Shapely
 pip install imgaug
 pip install librosa
 
