@@ -22,7 +22,6 @@ pip install kmodes==0.9
 pip install opencv-contrib-python-headless
 pip install scikit-image pillow requests lxml pyquery pyinstaller
 pip install six numpy scipy Pillow matplotlib scikit-image imageio Shapely
-pip install imgaug
 pip install librosa
 
 pip install scikit-learn==0.19.2
