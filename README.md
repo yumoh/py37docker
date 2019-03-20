@@ -23,6 +23,6 @@ docker build -t py37 .
 
 ### 启动
 ```
-docker run -it -e PASSWORD=你的jupyter密码 -p 你要服务的端:8888 py37
+docker run -it -e PASSWORD=你的jupyter密码 -p 你要服务的端口:8888 py37
 # 使用ctl+p+q退出
 ```
